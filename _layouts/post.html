@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section class="vc-example">
+  <article class="article-big">
+    <h5>{{ page.title }}</h5>
+    <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="big">
+    {{ content }}
+    </p>
+  </article>
+</section>
