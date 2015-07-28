@@ -1,0 +1,35 @@
+a, a:visited, #post .single .post-author .post-author-content .post-author-text h5, #post.page-author .author-top h4 span, #post.page-search .search-top h4 span, #post.page-search .search-top .search-info span, #post .page-contact .post-content-text .address-notes, #portfolio .portfolio-menu a:hover, #portfolio .portfolio-menu a.active { color:#44a3fc; }
+a:hover { color:#404040; } /* Don't change this value */
+
+ul.list-arrow li { list-style-image:url(list-arrow.png); }
+ul.list-arrow-bold li { list-style-image:url(list-arrow-bold.png); }
+ul.list-arrow-circle li { list-style-image:url(list-arrow-circle.png); }
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus { border:3px solid #44a3fc; }
+
+.btn-custom, input[type="button"], input[type="submit"], input[type="reset"], button, .nav-tabs > li > a, .accordion-heading .accordion-toggle, .rate .rate-val, .rate-overall .rate-overall-val, #header .nav-menu-main, #post .nav-page a.prev-page, #post .nav-page a.next-page, #post .post .title a, #post .post .title span, #post .post .post-thumbnail .post-icon, #post .post .btn-readmore, #post .post .post-comment .title, #post .post .post-comment ul li .comment-author cite span, #post .post .post-comment ul li .comment-reply-link, #post .post.post-review .post-thumbnail .post-review-point, #post .single .post-tags a, #portfolio .portfolio-menu .portfolio-menu-title, #portfolio .portfolio .portfolio-title, #portfolio .single-portfolio .portfolio-thumbnail .title, #portfolio .single-portfolio .portfolio-content .tbl-features h5, #portfolio .single-portfolio .portfolio-related-portfolios .item .portfolio-title, #sidebar .widget .header, .widget .tab-pane-tags a, #bottom .header p { background-color:#44a3fc; }
+
+.btn-custom:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus, .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus, .accordion-heading .accordion-toggle:hover, #post .nav-page a.prev-page:hover, #post .nav-page a.next-page:hover, #post .post .title a:hover, #post .post .btn-readmore:hover, #post .post .post-comment ul li .comment-author cite i, #post .post .post-comment ul li .comment-reply-link:hover, #post .single .post-tags a:hover, .widget .tab-pane-tags a:hover { background-color:#1b66ac; }
+
+#header .nav-menu-top form input[type="text"]:focus { border:1px solid #44a3fc; }
+
+#header .nav-menu-main ul li a {
+	border-right:1px solid #1772c7;
+	border-left:1px solid #78bdfe;
+}
+#header .nav-menu-main .container > ul > li > ul > li > a, #header .nav-menu-main .container > ul > li > ul > li > ul > li > a {
+	background-color:#44a3fc;
+	border-top:1px solid #78bdfe;
+	border-bottom:1px solid #1772c7;	
+}
+#header .nav-menu-main .container > ul > li > ul > li > ul { border-top:1px solid #1772c7; }
+
+.sub-header a { color:#FFF; } /* Don't change this value */
+
+#post .post .post-thumbnail .post-icon .post-icon-arrow, #post .post.post-review .post-thumbnail .post-review-point .post-point-arrow { background-image:url(post-icon-arrow.png); }
+
+#post .single .post-content-bottom .title, #post .single.single-review .sub-title, #post .single.single-media .sub-title, #post .page-contact .post-content-text h3, #post .page-sitemap .post-content-text h3, #post .page-404 .post-content-text h3, #portfolio .single-portfolio .portfolio-content-bottom .title { background-image:url(border-bottom-title.png); }
+
+#bottom .header { border-bottom:1px solid #44a3fc; }
+
+#bottom .scrollup { background-image:url(back-to-top.png); }
