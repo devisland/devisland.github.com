@@ -25,7 +25,7 @@
 <script type="text/javascript" src="/js/main.js"></script>
 <script>
 function postToFeed(title, url, image){
-var obj = {method: 'feed',link: url, picture: 'http://devisland.com'+image, name: title};
+var obj = { method: 'feed',link: url, picture: image, name: title};
 function callback(response){}
 FB.ui(obj, callback);
 }
