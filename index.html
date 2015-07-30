@@ -5,275 +5,57 @@ layout: default
 <!-- .container -->
 <div class="container">
   <div class="row">
-      <!-- #post -->
-        <section id="post" class="span8">
-          {% for post in site.posts %}
-          <!-- .post -->
-          <div class="post post-sticky">
-            <figure class="post-thumbnail">
-              <img src="images/contents/full/1.jpg" alt="Thumbnail" />
-              <div class="post-thumbnail-overlay">
-                <div class="post-icon">
-                  <span class="post-icon-arrow"></span><i class="icon-pushpin"></i>
-                </div>
-                <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-              </div>
-            </figure>
-            <div class="post-content">
-              <ul class="social">
-                    <li class="tab-facebook"><a href="http://facebook.com" title="Facebook"><i class="icon-facebook"></i></a></li>
-                    <li class="tab-twitter"><a href="http://twitter.com" title="Twitter"><i class="icon-twitter"></i></a></li>
-                    <li class="tab-google-plus"><a href="http://plus.google.com" title="Google Plus"><i class="icon-google-plus"></i></a></li>
-                    <li class="tab-linkedin"><a href="http://linkedin.com" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
-                </ul>
-                <div class="post-content-text">
-                  <p class="post-meta">By <a href="author.html" title="Posts by admin">admin</a> on 12 November 2013 in <a href="archives.html" title="View all posts in Business">Business</a>, <a href="archives.html" title="View all posts in National">National</a>&nbsp; | &nbsp;<a href="single_post.html#comments" title="Comments for The sunset faded to twilight">5 comments</a></p>
-                  {{ post.excerpt }}
-                  <div class="btn-section">
-                    <a href="{{ post.url }}" title="{{ post.title }}" class="btn-readmore">Continue Reading</a>
-                  </div>
-                </div>
+    <!-- #post -->
+    <section id="post" class="span12">
+      {% for post in site.posts %}
+      <!-- .post -->
+      <div class="post post-sticky">
+        <figure class="post-thumbnail">
+          <img src="images/posts/{{ post.image }}" alt="Thumbnail" />
+          <div class="post-thumbnail-overlay">
+            <div class="post-icon">
+              <span class="post-icon-arrow"></span><i class="icon-pushpin"></i>
+            </div>
+            <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+          </div>
+        </figure>
+        <div class="post-content">
+          <ul class="social">
+            <li class="tab-facebook"><a href="http://facebook.com" title="Facebook"><i class="icon-facebook"></i></a></li>
+            <li class="tab-twitter"><a href="http://twitter.com" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li class="tab-google-plus"><a href="http://plus.google.com" title="Google Plus"><i class="icon-google-plus"></i></a></li>
+            <li class="tab-linkedin"><a href="http://linkedin.com" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
+          </ul>
+          <div class="post-content-text">
+            <!--
+            <p class="post-meta">By <a href="author.html" title="Posts by admin">admin</a> on 12 November 2013 in <a href="archives.html" title="View all posts in Business">Business</a>, <a href="archives.html" title="View all posts in National">National</a>&nbsp; | &nbsp;<a href="single_post.html#comments" title="Comments for The sunset faded to twilight">5 comments</a></p>
+          -->
+            {{ post.excerpt }}
+            <div class="btn-section">
+              <a href="{{ post.url }}" title="{{ post.title }}" class="btn-readmore">Continuar lendo...</a>
             </div>
           </div>
-          <!-- .post end -->
-          {% endfor %}
-
-          <!-- .nav-page -->
-          <div class="nav-page">
-          <a href="archives.html" class="current">1</a>
-          <a href="archives.html">2</a>
-          <a href="archives.html">3</a>
-          <a href="archives.html">4</a>
-          <a href="archives.html">5</a>
-          <a href="archives.html" class="sep-link">....</a>
-          <a href="archives.html">10</a>
-          <a href="archives.html" class="next-page"><i class="icon-chevron-right"></i></a>
-          </div>
-          <!-- .nav-page end -->
-
-        </section>
-        <!-- #post end -->
-
-        <!-- #sidebar -->
-        <section id="sidebar" class="span4">
-
-          <!-- .widget1 -->
-            <div class="widget">
-
-              <ul class="nav nav-tabs">
-                  <li class="active"><a href="#tab-widget-recents" data-toggle="tab"><i class="icon-file-text-alt"></i></a></li>
-                    <li><a href="#tab-widget-comments" data-toggle="tab"><i class="icon-comments"></i></a></li>
-                    <li><a href="#tab-widget-tags" data-toggle="tab"><i class="icon-tags"></i></a></li>
-                </ul>
-
-                <!-- .tab-content -->
-                <div class="tab-content">
-
-                  <!-- .tab-pane-recents -->
-                  <div class="tab-pane tab-pane-recents active" id="tab-widget-recents">
-                      <ul>
-
-                          <li> <!-- 1 -->
-                              <img src="images/contents/300/1.jpg" alt="Thumbnail" />
-                                <div class="text">
-                                    <h5><a href="single_post.html" title="Permanent link to The sunset faded to twilight">The sunset faded to twilight</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 2 -->
-                              <img src="images/contents/300/2.jpg" alt="Thumbnail" />
-                                <div class="text">
-                                    <h5><a href="single_post.html" title="Permanent link to But thoughts like these troubled very few of the reckles crew">But thoughts like these troubled very few of the reckles crew</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 3 -->
-                              <img src="images/contents/300/3.jpg" alt="Thumbnail" />
-                                <div class="text">
-                                    <h5><a href="single_post.html" title="Permanent link to New Washington Farmhouse Design">New Washington Farmhouse Design</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 4 -->
-                              <img src="images/contents/300/4.jpg" alt="Thumbnail" />
-                                <div class="text">
-                                    <h5><a href="single_post.html" title="New Dodge Durango, SUV isn't dead and will rise">New Dodge Durango, SUV isn't dead and will rise</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 5 -->
-                              <img src="images/contents/300/5.jpg" alt="Thumbnail" />
-                                <div class="text">
-                                    <h5><a href="single_post.html" title="Permanent link to After supper and another social chat and smoke">After supper and another social chat and smoke</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- .tab-pane-recents end -->
-
-                    <!-- .tab-pane-comments -->
-                    <div class="tab-pane tab-pane-comments" id="tab-widget-comments">
-                      <ul>
-
-                          <li> <!-- 1 -->
-                              <img src="images/contents/avatars/1.jpg" alt="Avatar" />
-                                <div class="text">
-                                    <h5><a href="single_post.html#comments" title="Comments for After supper and another social chat and smoke">mdkiwol</a> in <a href="single_post.html" title="Permanent link to After supper and another social chat and smoke">After supper and another social chat and smoke</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 2 -->
-                              <img src="images/contents/avatars/2.jpg" alt="Avatar" />
-                                <div class="text">
-                                    <h5><a href="single_post.html#comments" title="Comments for But thoughts like these troubled very few of the reckles crew">amaah</a> in <a href="single_post.html" title="Permanent link to But thoughts like these troubled very few of the reckles crew">But thoughts like these troubled very few of the reckles crew</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 3 -->
-                              <img src="images/contents/avatars/3.jpg" alt="Avatar" />
-                                <div class="text">
-                                    <h5><a href="single_post.html#comments" title="Comments for After supper and another social chat and smoke">jagerjack</a> in <a href="single_post.html" title="Permanent link to After supper and another social chat and smoke">After supper and another social chat and smoke</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 4 -->
-                              <img src="images/contents/avatars/4.jpg" alt="Avatar" />
-                                <div class="text">
-                                    <h5><a href="single_post.html#comments" title="Comments for But thoughts like these troubled very few of the reckles crew">zeekroem</a> in <a href="single_post.html" title="Permanent link to But thoughts like these troubled very few of the reckles crew">But thoughts like these troubled very few of the reckles crew</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-                            <li> <!-- 5 -->
-                              <img src="images/contents/avatars/1.jpg" alt="Avatar" />
-                                <div class="text">
-                                    <h5><a href="single_post.html#comments" title="Comments for The sunset faded to twilight">mdkiwol</a> in <a href="single_post.html" title="Permanent link to The sunset faded to twilight">The sunset faded to twilight</a></h5>
-                                    <p>November 12, 2013</p>
-              </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- .tab-pane-comments end -->
-
-                    <!-- .tab-pane-tags -->
-                    <div class="tab-pane tab-pane-tags" id="tab-widget-tags">
-                      <a href="archives.html" title="View all posts in technology">technology</a>
-                        <a href="archives.html" title="View all posts in business">business</a>
-                        <a href="archives.html" title="View all posts in released">released</a>
-                        <a href="archives.html" title="View all posts in national">national</a>
-                        <a href="archives.html" title="View all posts in sports">sports</a>
-                        <a href="archives.html" title="View all posts in entertainment">entertainment</a>
-                        <a href="archives.html" title="View all posts in computing">computing</a>
-                        <a href="archives.html" title="View all posts in mobile">mobile</a>
-                        <a href="archives.html" title="View all posts in software">software</a>
-                        <a href="archives.html" title="View all posts in gaming">gaming</a>
-                        <a href="archives.html" title="View all posts in internet">internet</a>
-                        <a href="archives.html" title="View all posts in hardware">hardware</a>
-                        <a href="archives.html" title="View all posts in jakarta">jakarta</a>
-                        <a href="archives.html" title="View all posts in iphone">iphone</a>
-                        <a href="archives.html" title="View all posts in disaster">disaster</a>
-                        <a href="archives.html" title="View all posts in indonesia">indonesia</a>
-                        <a href="archives.html" title="View all posts in industry">industry</a>
-                        <a href="archives.html" title="View all posts in tourism">tourism</a>
-                        <a href="archives.html" title="View all posts in company">company</a>
-                        <a href="archives.html" title="View all posts in international">international</a>
-                        <a href="archives.html" title="View all posts in health">health</a>
-                        <a href="archives.html" title="View all posts in education">education</a>
-                        <a href="archives.html" title="View all posts in windows">windows</a>
-                        <a href="archives.html" title="View all posts in apple">apple</a>
-                        <a href="archives.html" title="View all posts in gadget">gadget</a>
-                        <a href="archives.html" title="View all posts in smartphone">smartphone</a>
-                        <a href="archives.html" title="View all posts in laptop">laptop</a>
-                        <a href="archives.html" title="View all posts in learn">learn</a>
-                        <a href="archives.html" title="View all posts in study">study</a>
-                        <a href="archives.html" title="View all posts in movie">movie</a>
-                        <a href="archives.html" title="View all posts in event">event</a>
-                        <a href="archives.html" title="View all posts in politic">politic</a>
-                        <a href="archives.html" title="View all posts in anime">anime</a>
-                    </div>
-                    <!-- .tab-pane-tags end -->
-
-                </div>
-                <!-- .tab-content end -->
-
-            </div>
-            <!-- .widget1 end -->
-
-            <!-- .widget2 -->
-            <div class="widget">
-              <div class="widget-wrap">
-
-                    <div class="header">
-                      <p>Post Categories</p>
-                    </div>
-
-                    <div class="basic_widget">
-                        <ul>
-                            <li><a href="archives.html" title="View all posts in Business">Business</a><span class="badge pull-right">12</span></li>
-                            <li><a href="archives.html" title="View all posts in Technology">Technology</a><span class="badge pull-right">37</span></li>
-                            <li><a href="archives.html" title="View all posts in Education">Education</a><span class="badge pull-right">5</span></li>
-                            <li><a href="archives.html" title="View all posts in Entertainment">Entertainment</a><span class="badge pull-right">17</span></li>
-                            <li><a href="archives.html" title="View all posts in National">National</a><span class="badge pull-right">3</span></li>
-                            <li><a href="archives.html" title="View all posts in International">International</a><span class="badge pull-right">25</span></li>
-                            <li><a href="archives.html" title="View all posts in Lifestyle">Lifestyle</a><span class="badge pull-right">9</span></li>
-                            <li><a href="archives.html" title="View all posts in Movies">Movies</a><span class="badge pull-right">11</span></li>
-                            <li><a href="archives.html" title="View all posts in Hot News">Hot News</a><span class="badge pull-right">84</span></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <!-- .widget2 end -->
-
-            <!-- .widget3 -->
-            <div class="widget">
-              <div class="widget-wrap">
-
-                    <div class="header">
-                      <p>Our Sponsors</p>
-                    </div>
-
-                    <div class="dotstheme_ads_widget">
-                        <div class="row-fluid">
-                            <figure class="span6"><img src="images/contents/ads/1.jpg" alt="Sponsor" /></figure>
-                            <figure class="span6"><img src="images/contents/ads/2.jpg" alt="Sponsor" /></figure>
-                        </div>
-                        <div class="row-fluid">
-                            <figure class="span6"><img src="images/contents/ads/3.jpg" alt="Sponsor" /></figure>
-                            <figure class="span6"><img src="images/contents/ads/4.jpg" alt="Sponsor" /></figure>
-                        </div>
-                    </div>
-
+        </div>
       </div>
-            </div>
-            <!-- .widget3 end -->
+      <!-- .post end -->
+      {% endfor %}
 
-            <!-- .widget4 -->
-            <div class="widget">
-              <div class="widget-wrap">
+      <!-- .nav-page
+      <div class="nav-page">
+        <a href="archives.html" class="current">1</a>
+        <a href="archives.html">2</a>
+        <a href="archives.html">3</a>
+        <a href="archives.html">4</a>
+        <a href="archives.html">5</a>
+        <a href="archives.html" class="sep-link">....</a>
+        <a href="archives.html">10</a>
+        <a href="archives.html" class="next-page"><i class="icon-chevron-right"></i></a>
+      </div>
+      <!-- .nav-page end -->
 
-                    <div class="header">
-                      <p>Flickr Widget</p>
-                    </div>
+    </section>
+    <!-- #post end -->
 
-                    <div class="dotstheme_flickr_widget">
-                        <div class="flexslider loading">
-                            <ul class="slides">
-                              <!-- flickr images content -->
-            </ul>
-                        </div>
-                        <p>Photos by <a href="http://www.flickr.com/photos/36587311@N08" target="_blank">cubagallery</a></p>
-                    </div>
-
-                </div>
-            </div>
-            <!-- .widget4 end -->
-
-        </section>
-        <!-- #sidebar end -->
-
-    </div>
+  </div>
 </div>
 <!-- .container end -->
