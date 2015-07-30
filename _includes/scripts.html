@@ -23,3 +23,17 @@
 <script type="text/javascript" src="/js/jflickrfeed.min.js"></script>
 <script type="text/javascript" src="/js/gmaps.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+<script>
+function postToFeed(title, url, image){
+var obj = {method: 'feed',link: url, picture: 'http://devisland.com'+image, name: title};
+function callback(response){}
+FB.ui(obj, callback);
+}
+
+$('.btnShare').click(function(){
+elem = $(this);
+postToFeed(elem.data('title'), elem.data('desc'), elem.prop('href'), elem.data('image'));
+
+return false;
+});
+</script>

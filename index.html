@@ -21,10 +21,12 @@ layout: default
         </figure>
         <div class="post-content">
           <ul class="social">
-            <li class="tab-facebook"><a href="http://facebook.com" title="Facebook"><i class="icon-facebook"></i></a></li>
-            <li class="tab-twitter"><a href="http://twitter.com" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li class="tab-facebook"><a href="{{ post.url }}" data-image="images/posts/{{ post.image }}" data-title="{{ post.title }}" class="btnShare" title="Facebook"><i class="icon-facebook"></i></a></li>
+            <li class="tab-twitter"><a href="https://twitter.com/share?url={{ site.url }}{{ post.url }}&text={{ post.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <!--
             <li class="tab-google-plus"><a href="http://plus.google.com" title="Google Plus"><i class="icon-google-plus"></i></a></li>
             <li class="tab-linkedin"><a href="http://linkedin.com" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
+          -->
           </ul>
           <div class="post-content-text">
             <!--
