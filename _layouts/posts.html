@@ -36,7 +36,7 @@
           <div class="post-content">
 
             <ul class="social">
-              <li class="tab-facebook"><a href="{{ page.url }}" data-image="images/posts/{{ page.image }}" data-title="{{ page.title }}" class="btnShare" title="Facebook"><i class="icon-facebook"></i></a></li>
+              <li class="tab-facebook"><a href="https://www.facebook.com/dialog/feed?app_id=120990311245031&display=popup&caption={{ page.title }}&link={{ site.url }}{{ page.url }}&picture={{ site.url }}/images/posts/{{ page.image }}&redirect_uri={{ site.url }}{{ page.url }}" title="Facebook"><i class="icon-facebook"></i></a></li>
               <li class="tab-twitter"><a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
             </ul>
 
