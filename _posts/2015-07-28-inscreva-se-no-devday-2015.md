@@ -1,9 +1,9 @@
 ---
 layout: posts
-title: DEVDAY 2015
-category: Eventos
+title: Inscreva-se no DEVDAY 2015
+category: DEVDAY
 image: devday-2015.png
-tags: [devday, devday2015]
+tags: [devday, devday-2015]
 ---
 
 Um evento feito por *desenvolvedores* para *desenvolvedores*.
@@ -19,4 +19,4 @@ Você pode encontrar mais detalhes da nossa história em nossa [página do Faceb
 As palestras dos eventos de 2012 e 2013 você pode conferir em no [canal DevIsland no YouTube](http://youtube.com/DevIsland).
 As palestras do evento de 2014 foram publicadas no conceituado site de engenharia de software InfoQ e você pode conferi-las neste link [http://www.infoq.com/br/devday/](http://www.infoq.com/br/devday/).
 
-Nenhum profissional da área pode perder!
+Nenhum profissional da área pode perder! [Inscreva-se!](http://devday.devisland.com){: .btn-readmore}
