@@ -22,8 +22,10 @@ layout: default
         <div class="post-content">
           <ul class="social">
             <li class="tab-facebook"><a href="https://www.facebook.com/dialog/feed?app_id=120990311245031&display=popup&caption={{ post.title }}&link={{ site.url }}{{ post.url }}&picture={{ site.url }}/images/posts/{{ post.image }}&name={{ post.title }}&redirect_uri={{ site.url }}{{ page.url }}" title="Facebook"><i class="icon-facebook"></i></a></li>
-            <li class="tab-twitter"><a href="https://twitter.com/share?url={{ site.url }}{{ post.url }}&text={{ post.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
-            <li class="tab-google-plus"><a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
+            <li class="tab-twitter"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ post.url }}&text={{ post.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li class="tab-google-plus"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+   target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
           <!--  <li class="tab-linkedin"><a href="http://linkedin.com" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
           -->
           </ul>
