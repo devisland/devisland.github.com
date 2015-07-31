@@ -2,7 +2,7 @@
 layout: posts
 title: DEVDAY 2015 + Open Source
 category: DEVDAY
-image: devday-2015.png
+image: devday-os.jpg
 tags: [devday, devday-2015]
 ---
 
