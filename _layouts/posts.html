@@ -12,7 +12,7 @@
     <div class="row">
 
       <!-- #post -->
-      <section id="post" class="span12">
+      <section id="post" class="span8">
 
         <!-- .post -->
         <div class="post post-gallery single">
@@ -38,25 +38,25 @@
             <ul class="social">
               <li class="tab-facebook"><a href="https://www.facebook.com/dialog/feed?app_id=120990311245031&display=popup&caption={{ page.title }}&link={{ site.url }}{{ page.url }}&picture={{ site.url }}/images/posts/{{ page.image }}&redirect_uri={{ site.url }}{{ page.url }}" title="Facebook"><i class="icon-facebook"></i></a></li>
               <li class="tab-twitter"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-   target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
-              <li class="tab-google-plus"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-   target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
-            </ul>
+                target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+                <li class="tab-google-plus"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                  target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
+                </ul>
 
-            <div class="post-content-text">
-              <!--
-              <p class="post-meta">By <a href="author.html" title="Posts by admin">admin</a> on 02 November 2013 in <a href="archives.html" title="View all posts in Lifestyle">Lifestyle</a>&nbsp; | &nbsp;<a href="#comments" title="Comments for New Washington Farmhouse Design">8 comments</a></p>
-            -->
-              {{ content }}
-            </div>
+                <div class="post-content-text">
+                  <!--
+                  <p class="post-meta">By <a href="author.html" title="Posts by admin">admin</a> on 02 November 2013 in <a href="archives.html" title="View all posts in Lifestyle">Lifestyle</a>&nbsp; | &nbsp;<a href="#comments" title="Comments for New Washington Farmhouse Design">8 comments</a></p>
+                -->
+                {{ content }}
+              </div>
 
-            <!-- .post-content-bottom -->
-            <div class="post-content-bottom">
-              {% if page.tags.size > 0 %}
-              <!-- .post-tags
-              <div class="post-tags">
+              <!-- .post-content-bottom -->
+              <div class="post-content-bottom">
+                {% if page.tags.size > 0 %}
+                <!-- .post-tags -->
+                <div class="post-tags">
                 {% for tag in page.tags %}
-                <a href="/tag/{{ tag }}" title="View all posts in {{ tag }}">{{ tag }}</a>
+                <a href="/tag/{{ tag }}" title="{{ tag }}">{{ tag }}</a>
                 {% endfor %}
               </div>
               <!-- .post-tags end -->
@@ -66,41 +66,78 @@
 
               <!-- .post-author
               <div class="post-author">
-                <h4 class="title">About The Author</h4>
-                <div class="post-author-content">
-                  <figure><img src="/images/contents/avatars/1.jpg" alt="Avatar" /></figure>
-                  <div class="post-author-text">
-                    <h5>Mugiwara Kiwolen</h5>
-                    <p>Chuck corned beef capicola tenderloin turkey rump beef ribs spare ribs kielbasa frankfurter hamburger  round round strip steak. Beef ribs shank meatball boudin ribeye.</p>
-                  </div>
+              <h4 class="title">About The Author</h4>
+              <div class="post-author-content">
+              <figure><img src="/images/contents/avatars/1.jpg" alt="Avatar" /></figure>
+              <div class="post-author-text">
+              <h5>Mugiwara Kiwolen</h5>
+              <p>Chuck corned beef capicola tenderloin turkey rump beef ribs spare ribs kielbasa frankfurter hamburger  round round strip steak. Beef ribs shank meatball boudin ribeye.</p>
+            </div>
+          </div>
+        </div>
+        <!-- .post-author end -->
+
+        <!-- .post-nav
+        <div class="sep-border margin-top20"></div>
+        <div class="post-nav">
+        <a href="single_post.html" class="post-nav-prev">&laquo;&nbsp;&nbsp; Apple Released The Mac Pro 2013</a>
+        <a href="single_post.html" class="post-nav-next">Microsoft Windows 8.1 Blue Released &nbsp;&nbsp;&raquo;</a>
+      </div>
+      <div class="sep-border margin-bottom20"></div>
+      <!-- .post-nav end -->
+
+      <!-- .post-related-posts -->
+      <div class="post-related-posts">
+        <h4 class="title">Posts relacionados</h4>
+          <div class="row-fluid">
+
+    {% assign relatedPosts = 0 %}
+    {% for post in site.posts %}
+        {% assign sameTagCount = 0 %}
+
+        {% for tag in post.tags %}
+            {% if page.tags contains tag and post.title != page.title %}
+              {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+
+        {% if sameTagCount >= 2 %}
+          {% assign relatedPosts = relatedPosts | plus:1 %}
+          <div class="item span6">
+            <a href="{{ post.url }}" title="Permanent link to For {{ post.title }}">
+              <div class="item-wrap">
+                <img src="/images/posts/{{ post.image }}" alt="Thumbnail" />
+                <div class="post-thumbnail-overlay">
+                  <h4>{{ post.title }}</h4>
                 </div>
               </div>
-              <!-- .post-author end -->
-
-              <!-- .post-nav
-              <div class="sep-border margin-top20"></div>
-              <div class="post-nav">
-                <a href="single_post.html" class="post-nav-prev">&laquo;&nbsp;&nbsp; Apple Released The Mac Pro 2013</a>
-                <a href="single_post.html" class="post-nav-next">Microsoft Windows 8.1 Blue Released &nbsp;&nbsp;&raquo;</a>
-              </div>
-              <div class="sep-border margin-bottom20"></div>
-              <!-- .post-nav end -->
-
-            </div>
-            <!-- .post-content-bottom end -->
-
+            </a>
           </div>
-          <!-- .post-content end -->
-
+        {% endif %}
+        {% if relatedPosts >= 2 %}
+        {% break %}
+        {% endif %}
+    {% endfor %}
         </div>
-        <!-- .post end -->
-
-      </section>
-      <!-- #post end -->
+      </div>
+      <!-- .post-related-posts end -->
     </div>
+    <!-- .post-content-bottom end -->
   </div>
+  <!-- .post-content end -->
 
-  {% include footer.html %}
-  {% include scripts.html %}
+</div>
+<!-- .post end -->
+
+</section>
+<!-- #post end -->
+<section id="sidebar" class="span4">
+  {% include categories.html %}
+</section>
+</div>
+</div>
+
+{% include footer.html %}
+{% include scripts.html %}
 </body>
 </html>

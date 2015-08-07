@@ -6,7 +6,14 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  {{ content }}
+  <div class="container">
+    <div class="row">
+      {{ content }}
+      <section id="sidebar" class="span4">
+        {% include categories.html %}
+      </section>
+    </div>
+  </div>
   {% include footer.html %}
   {% include scripts.html %}
 </body>

@@ -1,0 +1,14 @@
+<div class="widget">
+  <div class="widget-wrap">
+    <div class="header">
+      <p>Categorias</p>
+    </div>
+    <div class="basic_widget">
+      <ul>
+        {% for category in site.categories %}
+        <li><a href="/{{category | first}}" title="View all posts in Business">{{category | first }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

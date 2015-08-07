@@ -1,61 +1,52 @@
 ---
 layout: default
 ---
-
-<!-- .container -->
-<div class="container">
-  <div class="row">
-    <!-- #post -->
-    <section id="post" class="span12">
-      {% for post in site.posts %}
-      <!-- .post -->
-      <div class="post post-sticky">
-        <figure class="post-thumbnail">
-          <img src="images/posts/{{ post.image }}" alt="Thumbnail" />
-          <div class="post-thumbnail-overlay">
-            <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-          </div>
-        </figure>
-        <div class="post-content">
-          <ul class="social">
-            <li class="tab-facebook"><a href="https://www.facebook.com/dialog/feed?app_id=120990311245031&display=popup&caption={{ post.title }}&link={{ site.url }}{{ post.url }}&picture={{ site.url }}/images/posts/{{ post.image }}&name={{ post.title }}&redirect_uri={{ site.url }}{{ page.url }}" title="Facebook"><i class="icon-facebook"></i></a></li>
-            <li class="tab-twitter"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-   target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ post.url }}&text={{ post.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
-            <li class="tab-google-plus"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-   target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
-          <!--  <li class="tab-linkedin"><a href="http://linkedin.com" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
+<!-- #post -->
+<section id="post" class="span8">
+  {% for post in site.posts %}
+  <!-- .post -->
+  <div class="post post-sticky">
+    <figure class="post-thumbnail">
+      <img src="images/posts/{{ post.image }}" alt="Thumbnail" />
+      <div class="post-thumbnail-overlay">
+        <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      </div>
+    </figure>
+    <div class="post-content">
+      <ul class="social">
+        <li class="tab-facebook"><a href="https://www.facebook.com/dialog/feed?app_id=120990311245031&display=popup&caption={{ post.title }}&link={{ site.url }}{{ post.url }}&picture={{ site.url }}/images/posts/{{ post.image }}&name={{ post.title }}&redirect_uri={{ site.url }}{{ page.url }}" title="Facebook"><i class="icon-facebook"></i></a></li>
+        <li class="tab-twitter"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+          target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ post.url }}&text={{ post.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+          <li class="tab-google-plus"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+            target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
+            <!--  <li class="tab-linkedin"><a href="http://linkedin.com" title="LinkedIn"><i class="icon-linkedin"></i></a></li>
           -->
-          </ul>
-          <div class="post-content-text">
-            <!--
-            <p class="post-meta">By <a href="author.html" title="Posts by admin">admin</a> on 12 November 2013 in <a href="archives.html" title="View all posts in Business">Business</a>, <a href="archives.html" title="View all posts in National">National</a>&nbsp; | &nbsp;<a href="single_post.html#comments" title="Comments for The sunset faded to twilight">5 comments</a></p>
-          -->
-            {{ post.excerpt }}
-            <div class="btn-section">
-              <a href="{{ post.url }}" title="{{ post.title }}" class="btn-readmore">Continuar lendo...</a>
-            </div>
-          </div>
+        </ul>
+        <div class="post-content-text">
+          <!--
+          <p class="post-meta">By <a href="author.html" title="Posts by admin">admin</a> on 12 November 2013 in <a href="archives.html" title="View all posts in Business">Business</a>, <a href="archives.html" title="View all posts in National">National</a>&nbsp; | &nbsp;<a href="single_post.html#comments" title="Comments for The sunset faded to twilight">5 comments</a></p>
+        -->
+        {{ post.excerpt }}
+        <div class="btn-section">
+          <a href="{{ post.url }}" title="{{ post.title }}" class="btn-readmore">Continuar lendo</a>
         </div>
       </div>
-      <!-- .post end -->
-      {% endfor %}
-
-      <!-- .nav-page
-      <div class="nav-page">
-        <a href="archives.html" class="current">1</a>
-        <a href="archives.html">2</a>
-        <a href="archives.html">3</a>
-        <a href="archives.html">4</a>
-        <a href="archives.html">5</a>
-        <a href="archives.html" class="sep-link">....</a>
-        <a href="archives.html">10</a>
-        <a href="archives.html" class="next-page"><i class="icon-chevron-right"></i></a>
-      </div>
-      <!-- .nav-page end -->
-
-    </section>
-    <!-- #post end -->
-
+    </div>
   </div>
+  <!-- .post end -->
+  {% endfor %}
+
+  <!-- .nav-page
+  <div class="nav-page">
+  <a href="archives.html" class="current">1</a>
+  <a href="archives.html">2</a>
+  <a href="archives.html">3</a>
+  <a href="archives.html">4</a>
+  <a href="archives.html">5</a>
+  <a href="archives.html" class="sep-link">....</a>
+  <a href="archives.html">10</a>
+  <a href="archives.html" class="next-page"><i class="icon-chevron-right"></i></a>
 </div>
-<!-- .container end -->
+<!-- .nav-page end -->
+</section>
+<!-- #post end -->
