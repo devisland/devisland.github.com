@@ -3,7 +3,14 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-{% include head.html %}
+<head>
+  <meta name="keywords" content="devisland, devday, devday2015, software developer, code, coding, programing" />
+  {% include head.html %}
+  <meta name="thumbnail" content="http://devisland.com/images/posts/{{ page.image }}" />
+  <meta name="title" content="{{ page.title }}" />
+  <meta name="description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' }} " />
+  <link rel="image_src" href="http://devisland.com/images/posts/{{ page.image }}" />
+</head>
 <body>
   {% include header.html %}
 
@@ -53,7 +60,7 @@
               <!-- .post-content-bottom -->
               <div class="post-content-bottom">
                 {% if page.tags.size > 0 %}
-                <!-- .post-tags -->
+                <!-- .post-tags
                 <div class="post-tags">
                 {% for tag in page.tags %}
                 <a href="/tag/{{ tag }}" title="{{ tag }}">{{ tag }}</a>
@@ -90,19 +97,7 @@
       <div class="post-related-posts">
         <h4 class="title">Posts relacionados</h4>
           <div class="row-fluid">
-
-    {% assign relatedPosts = 0 %}
-    {% for post in site.posts %}
-        {% assign sameTagCount = 0 %}
-
-        {% for tag in post.tags %}
-            {% if page.tags contains tag and post.title != page.title %}
-              {% assign sameTagCount = sameTagCount | plus: 1 %}
-            {% endif %}
-        {% endfor %}
-
-        {% if sameTagCount >= 2 %}
-          {% assign relatedPosts = relatedPosts | plus:1 %}
+          {% for post in site.related_posts limit:2 %}
           <div class="item span6">
             <a href="{{ post.url }}" title="Permanent link to For {{ post.title }}">
               <div class="item-wrap">
@@ -113,11 +108,7 @@
               </div>
             </a>
           </div>
-        {% endif %}
-        {% if relatedPosts >= 2 %}
-        {% break %}
-        {% endif %}
-    {% endfor %}
+          {% endfor %}
         </div>
       </div>
       <!-- .post-related-posts end -->
@@ -125,15 +116,15 @@
     <!-- .post-content-bottom end -->
   </div>
   <!-- .post-content end -->
-
+  <div id="comments" class="post-comment">
+    <div class="fb-comments" data-href="http://devisland.com{{ page.url }}" data-numposts="5"></div>
+  </div>
 </div>
 <!-- .post end -->
 
 </section>
 <!-- #post end -->
-<section id="sidebar" class="span4">
-  {% include categories.html %}
-</section>
+{% include sidebar.html %}
 </div>
 </div>
 
