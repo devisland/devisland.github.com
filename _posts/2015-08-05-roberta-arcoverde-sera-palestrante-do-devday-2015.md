@@ -4,6 +4,7 @@ title: Roberta Arcoverde será palestrante do DEVDAY 2015
 category: DEVDAY
 image: Roberta-Arcoverde.jpg
 tags: [devday, devday-2015, palestrante]
+description: Convidamos a desenvolvedora Roberta Arcoverde para palestrar no DEVDAY 2015.
 ---
 Convidamos a desenvolvedora Roberta Arcoverde para palestrar no DEVDAY 2015.
 

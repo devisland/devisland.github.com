@@ -4,6 +4,7 @@ title: Gustavo Caetano será palestrante do DEVDAY 2015
 category: DEVDAY
 image: gustavo-caetano.jpg
 tags: [devday, devday-2015, palestrante]
+description: Para inspirar os desenvolvedores convidamos para palestrar no DEVDAY o empreendedor Gustavo Caetano.
 ---
 Para inspirar os desenvolvedores convidamos para palestrar no DEVDAY o empreendedor [Gustavo Caetano](http://www.gustavocaetano.com.br/).
 

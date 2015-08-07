@@ -4,6 +4,7 @@ title: Inscreva-se no DEVDAY 2015
 category: DEVDAY
 image: devday-2015.png
 tags: [devday, devday-2015]
+description: Um evento feito por desenvolvedores para desenvolvedores.
 ---
 
 Um evento feito por *desenvolvedores* para *desenvolvedores*.

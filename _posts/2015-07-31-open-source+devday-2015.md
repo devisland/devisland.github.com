@@ -4,6 +4,7 @@ title: DEVDAY 2015 + Open Source
 category: DEVDAY
 image: devday-os.jpg
 tags: [devday, devday-2015]
+description: Novamente a comunidade DevIsland abrirá espaço, no DEVDAY 2015, para a apresentação de projetos open source.
 ---
 
 Novamente a comunidade DevIsland abrirá espaço, no [DEVDAY 2015](http://devday.devisland.com), para a apresentação de projetos open source.
