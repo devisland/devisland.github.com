@@ -1,0 +1,48 @@
+---
+layout: default
+title: Oportunidades
+description: Espaço para divulgação de oportunidades de trabalho das melhores empresas
+---
+
+<!-- #post -->
+<section id="post" class="span8">
+  {% for post in site.posts %}
+    {% if post.category == "job" %}
+
+      <!-- .post -->
+      <div class="post post-sticky">
+        <figure class="post-thumbnail">
+          <!--img src="images/posts/{{ post.image }}" alt="Thumbnail" /-->
+          <div class="post-thumbnail-overlay">
+            <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.companyName }} - {{ post.title }}</a></h2>
+          </div>
+        </figure>
+        <div class="post-content">
+            {% include socialmenu.html %}
+            <div class="post-content-text">
+              <p class="post-meta"> em {{ post.dateDescription }}</p>
+            {{ post.resume }}
+            <br/>
+            <br/>
+            <a href="{{ post.url }}" title="{{ post.title }}" class="btn-readmore">Ver descrição completa</a>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  <!-- .post end -->
+  {% endfor %}
+
+  <div class="post post-sticky">
+    <figure class="post-thumbnail">
+      <div class="post-thumbnail-overlay">
+        <h2 class="title"><a title="">WHAT`S YOUR PROFFESSION?</a></h2>
+      </div>
+    </figure>
+    <div class="post-content">
+        <div class="post-content-text" style="min-height:auto;">
+          <p class="post-meta">Este é um post fixo. ;)</p>
+        Este é um espaço dedicado para divulgarmos para a comunidade as oportunidades para trabalhar nas melhores empresas.
+      </div>
+    </div>
+  </div>
+</section>

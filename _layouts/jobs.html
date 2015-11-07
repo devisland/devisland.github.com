@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta name="keywords" content="devisland, devday, devday2015, software developer, code, coding, programing" />
+  <meta name="thumbnail" content="http://devisland.com/images/posts/{{ page.image }}" />
+  <link rel="image_src" href="http://devisland.com/images/posts/{{ page.image }}" />
+	<meta property="og:image" content="http://devisland.com/images/posts/{{ page.image }}" />
+  <meta property="og:type" content="article" />
+  {% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+
+  <!-- .container -->
+  <div class="container">
+    <div class="row">
+
+      <!-- #post -->
+      <section id="post" class="span8">
+
+        <!-- .post -->
+        <div class="post post-gallery single">
+
+          <figure class="post-thumbnail">
+            <!-- <img src="/images/posts/{{ page.image }}" alt="Thumbnail" /> -->
+            <div class="post-thumbnail-overlay">
+              <h1 class="title"><span>{{ page.title }}</span></h1>
+            </div>
+          </figure>
+
+          <!-- .post-content -->
+          <div class="post-content">
+
+            <ul class="social">
+              <li class="tab-facebook"><a href="https://www.facebook.com/dialog/feed?app_id=120990311245031&display=popup&caption={{ page.title }}&link={{ site.url }}{{ page.url }}&picture={{ site.url }}/images/posts/{{ page.image }}&redirect_uri={{ site.url }}{{ page.url }}" title="Facebook"><i class="icon-facebook"></i></a></li>
+              <li class="tab-twitter"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=DevIsland&hashtags=DEVDAY2015" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+                <li class="tab-google-plus"><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                  target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Google Plus"><i class="icon-google-plus"></i></a></li>
+                </ul>
+
+                <div class="post-content-text">                  
+                {{ content }}
+              </div>
+
+              <!-- .post-content-bottom -->
+              <div class="post-content-bottom">
+
+              </div>
+  <!-- .post-content end -->
+</div>
+<!-- .post end -->
+
+</section>
+<!-- #post end -->
+{% include sidebar.html %}
+</div>
+</div>
+
+{% include footer.html %}
+{% include scripts.html %}
+</body>
+</html>
