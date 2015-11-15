@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta name="keywords" content="devisland, devday, devday2015, software developer, code, coding, programing" />
+  <meta name="thumbnail" content="http://devisland.com/images/posts/{{ page.image }}" />
+  <link rel="image_src" href="http://devisland.com/images/posts/{{ page.image }}" />
+	<meta property="og:image" content="http://devisland.com/images/posts/{{ page.image }}" />
+  <meta property="og:type" content="article" />
+  {% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+
+  <!-- .container -->
+  <div class="container">
+    <div class="row-fluid">
+      {{ content }}
+    </div>
+  </div>
+
+{% include footer.html %}
+{% include scripts.html %}
+</body>
+</html>

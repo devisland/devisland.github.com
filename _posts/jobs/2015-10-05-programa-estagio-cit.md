@@ -1,6 +1,6 @@
 ---
 layout: jobs
-title: Programa de Estágio Ci&t
+title: Programa de Estágio
 companyName: Ci&t
 category: job
 tags: [job, estágio, CI&T, oportunidade, programador]
