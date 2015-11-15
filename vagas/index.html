@@ -4,12 +4,12 @@ title: Vagas de TI
 description: Espaço para divulgação de oportunidades de trabalho das melhores empresas de desenvolvimento de softeware.
 keywords: [vaga, ti, desenvolvimento de software, desenvolvedor, qa, tester, designer, front-end]
 ---
-<section id="post">
+<section id="post" style="display:flex; flex-flow: row wrap; ">
   {% for post in site.posts %}
     {% if post.category == "job" %}
-      <div class="post post-sticky span4">
+      <div class="post post-sticky" style="max-width: 350px; margin: auto;">
           <div class="post-thumbnail-overlay">
-            <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} - {{ post.companyName }}</a></h2>
+            <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} <small style="color:#fff">{{ post.companyName }}</small></a></h2>
           </div>
       </div>
     {% endif %}
