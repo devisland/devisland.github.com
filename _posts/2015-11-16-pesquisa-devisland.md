@@ -17,7 +17,7 @@ Esta é apenas a primeira de outras novidades que estamos preparando para esta n
 
 Para que sejamos mais assertivos, gostaríamos que você respondesse a pesquisa abaixo, (é bem rapidinho, a gente jura) que **além de nos ajudar vai fazer você concorrer a uma assinatura anual da Pluralsight no valor de USD399,00** (Isso mesmo... 399 doletas!!!), com centenas de cursos disponíveis para você.
 
-**[Clique aqui e responda a pesquisa](http://goo.gl/forms/lGPeJpTeWF)**.
+**[Clique aqui e responda a pesquisa](http://goo.gl/forms/lGPeJpTeWF){:target="_blank"}**.
 
 Para não ficar de fora e ficar sabendo de todas as novidades e oportunidades em primeira mão:
 
