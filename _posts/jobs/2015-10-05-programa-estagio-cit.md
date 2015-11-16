@@ -3,6 +3,7 @@ layout: jobs
 title: Programa de Estágio
 companyName: Ci&t
 category: job
+image: ''
 tags: [job, estágio, CI&T, oportunidade, programador]
 description: Programa de Estágio 2016 CI&T.
 resume: Desafio Online do Programa de Estágio 2016! Começou a primeira etapa do processo seletivo, o desafio online!

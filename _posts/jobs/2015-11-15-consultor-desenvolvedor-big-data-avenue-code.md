@@ -3,6 +3,7 @@ layout: jobs
 title: Consultor (a) / Desenvolvedor (a) Big Data
 companyName: Avenue Code
 category: job
+image: ''
 tags: [job, big data, Avenue Code, oportunidade, vaga]
 description: Vaga para Consultor (a) / Desenvolvedor (a) Big Data na Avenue Code.
 resume: Se você é uma pessoa que tem uma paixão pelo que faz e está à procura de uma empresa inovadora, com um excelente ambiente de trabalho, além disso, ainda é louco por tecnologia e tem prazer em aprender cada dia mais... Este é o seu lugar!

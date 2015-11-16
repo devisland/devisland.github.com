@@ -3,6 +3,7 @@ layout: jobs
 title: Analista de DevOps
 companyName: Avenue Code
 category: job
+image: ''
 tags: [job, devops, Avenue Code, oportunidade, vaga]
 description: Vaga de Analista de DevOps na Avenue Code.
 resume: Se você é uma pessoa que tem uma paixão pelo que faz e está à procura de uma empresa inovadora, com um excelente ambiente de trabalho, além disso, ainda é louco por tecnologia e tem prazer em aprender cada dia mais... Este é o seu lugar!

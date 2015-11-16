@@ -3,6 +3,7 @@ layout: jobs
 title: Desenvolvedor(a) Java
 companyName: Avenue Code
 category: job
+image: ''
 tags: [job, desenvolvedor, Avenue Code, oportunidade, vaga, java]
 description: Vaga para Desenvolvedor(a) Java na Avenue Code.
 resume: Se você é uma pessoa que tem uma paixão pelo que faz e está à procura de uma empresa inovadora, com um excelente ambiente de trabalho, além disso, ainda é louco por tecnologia e tem prazer em aprender cada dia mais... Este é o seu lugar!

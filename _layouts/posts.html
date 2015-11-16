@@ -25,7 +25,9 @@
         <div class="post post-gallery single">
 
           <figure class="post-thumbnail">
+            {% if page.image != '' %}
             <img src="/images/posts/{{ page.image }}" alt="Thumbnail" />
+            {% endif %}
             <div class="post-thumbnail-overlay">
               <h1 class="title"><span>{{ page.title }}</span></h1>
             </div>
@@ -87,13 +89,15 @@
 
       <!-- .post-related-posts -->
       <div class="post-related-posts">
-        <h4 class="title">Posts relacionados</h4>
+        <h4 class="title">Últimos Posts</h4>
           <div class="row-fluid">
           {% for post in site.related_posts limit:2 %}
           <div class="item span6">
             <a href="{{ post.url }}" title="Permanent link to For {{ post.title }}">
-              <div class="item-wrap">
-                <img src="/images/posts/{{ post.image }}" alt="Thumbnail" />
+              <div class="item-wrap" style="height:80px;">
+                {% if post.image != '' %}
+                  <img src="/images/posts/{{ post.image }}" alt="Thumbnail" />
+                {% endif %}
                 <div class="post-thumbnail-overlay">
                   <h4>{{ post.title }}</h4>
                 </div>

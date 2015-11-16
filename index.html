@@ -11,7 +11,9 @@ description: O DevIsland é uma comunidade de desenvolvimento plural cujo o obje
       <!-- .post -->
       <div class="post post-sticky">
         <figure class="post-thumbnail">
+          {% if post.image != '' %}
           <img src="images/posts/{{ post.image }}" alt="Thumbnail" />
+          {% endif %}
           <div class="post-thumbnail-overlay">
             <h2 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
           </div>
