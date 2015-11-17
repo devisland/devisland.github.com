@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Pesquisa Devisland
+title: Participe desta pesquisa e concorra a um voucher anual da Pluralsight.
 category: Pesquisa
 image: ''
 tags: [devisland, pesquisa, profissional, pluralsight]
@@ -17,6 +17,7 @@ Esta é apenas a primeira de outras novidades que estamos preparando para esta n
 
 Para que sejamos mais assertivos, gostaríamos que você respondesse a pesquisa abaixo, (é bem rapidinho, a gente jura) que **além de nos ajudar vai fazer você concorrer a uma assinatura anual da Pluralsight no valor de USD499,00** (Isso mesmo... 499 doletas!!!), com centenas de cursos disponíveis para você.
 
+Para concorrer ao voucher, além de responder a pesquisa, **compartilhe publicamente** este post na sua rede social favorita.
 
 **[Clique aqui e responda a pesquisa](http://goo.gl/forms/lGPeJpTeWF){:target="_blank"}**.
 
