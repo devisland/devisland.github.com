@@ -15,9 +15,12 @@ Uma destas iniciativas é para você que está em busca de uma nova oportunidade
 
 Esta é apenas a primeira de outras novidades que estamos preparando para esta nova etapa do DevIsland, que é uma comunidade plural e que mais do que nunca quer estar mais próximo de você.
 
-Para que sejamos mais assertivos, gostaríamos que você respondesse a pesquisa abaixo, (é bem rapidinho, a gente jura) que **além de nos ajudar vai fazer você concorrer a uma assinatura anual da Pluralsight no valor de USD399,00** (Isso mesmo... 399 doletas!!!), com centenas de cursos disponíveis para você.
+Para que sejamos mais assertivos, gostaríamos que você respondesse a pesquisa abaixo, (é bem rapidinho, a gente jura) que **além de nos ajudar vai fazer você concorrer a uma assinatura anual da Pluralsight no valor de USD499,00** (Isso mesmo... 499 doletas!!!), com centenas de cursos disponíveis para você.
+
 
 **[Clique aqui e responda a pesquisa](http://goo.gl/forms/lGPeJpTeWF){:target="_blank"}**.
+
+O sorteio será realizado no dia 11/12/2015. Boa sorte!
 
 Para não ficar de fora e ficar sabendo de todas as novidades e oportunidades em primeira mão:
 
