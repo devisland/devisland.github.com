@@ -36,4 +36,4 @@ Para isso, é necessário que você tenha:
 Se identificou? Então, nos envie seu currículo agora. Queremos muito te conhecer!
 Venha ser um Avenue Coder!
 
-[Visite o site da oportunidade](http://avenuecode.com/position?id=107467){: .btn-readmore}
+[Visite o site da oportunidade](http://avenuecode.com/careers/position/107467){: .btn-readmore}
