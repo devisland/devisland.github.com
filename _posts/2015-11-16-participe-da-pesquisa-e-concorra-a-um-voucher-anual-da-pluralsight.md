@@ -4,7 +4,7 @@ title: Participe desta pesquisa e concorra a um voucher anual da Pluralsight.
 category: Pesquisa
 image: ''
 tags: [devisland, pesquisa, profissional, pluralsight]
-description: O DevIsland irá divulgar vagas de tecnologia através do site e redes sociais. E repondendo a pesquisa você concorre a um voucher anual da pluralsight de graça!!!
+description: O DevIsland irá divulgar vagas de tecnologia através do site e redes sociais. E respondendo a pesquisa você concorre a um voucher anual da pluralsight de graça!!!
 ---
 
 **Olá Developers!!!!!!**
