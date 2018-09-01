@@ -1,19 +1,20 @@
-# Site settings
-title: DevIsland
+title: DevIsland | Comuunidade de Desenvolvimento 
 email: devday@devisland.com
-description: > # this means to ignore newlines until "baseurl:"
-  O DevIsland é uma comunidade desenvolvimento plural,
-  não pertencemos a uma tecnologia, muito menos a uma linguagem,
-  amamos código e tudo o que permeia este meio.
-  Todo o assunto cujo o foco seja melhorar a vida do desenvolvedor
-  e a qualidade do código que o mesmo escreve apoiamos, estudamos, pesquisamos e divulgamos.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://devisland.com" # the base hostname & protocol for your site
-twitter_username:   devisland
-github_username:    devisland
-facebook_username:  devisland
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://devisland.com"
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-sitemap
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# exclude my node related stuff
+exclude: ['package.json', 'node_modules']
+
+include: ['.nojekyll']
